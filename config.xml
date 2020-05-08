@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.iriel.mapsapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>MapsApp</name>
-    <description>Geolocalizacion y mapas</description>
+    <description>Geolocalizacion con LeafLet Maps</description>
     <author email="irielr74@gmail.com" href="http://phonegap.com">Iriel</author>
     <content src="index.html" />
 	
@@ -17,6 +17,10 @@
 	<preference name="Fullscreen" value="true" />
 	<preference name="KeepRunning" value="false"/>
 	<preference name="BackgroundColor" value="0xff0000ff"/>
+
+    <plugin name="cordova-plugin-file" source="npm" spec="~6.0.2" />
+    <plugin name="cordova-plugin-file-transfer" source="npm" spec="~1.7.1" />	
+	<plugin name="cordova-plugin-media" source="npm" spec="~2.2.0" />
 	-->	
 	<plugin name="cordova-plugin-console" spec="1.0.7" />
 	<plugin name="cordova-plugin-device" spec="2.0.3" />
@@ -27,10 +31,6 @@
 	<plugin name="cordova-plugin-inappbrowser" spec="3.2.0" />
 
     <plugin name="cordova-plugin-camera" source="npm" spec="~4.1.0" />
-    <plugin name="cordova-plugin-file" source="npm" spec="~6.0.2" />
-    <plugin name="cordova-plugin-file-transfer" source="npm" spec="~1.7.1" />
-	
-	<plugin name="cordova-plugin-media" source="npm" spec="~2.2.0" />
     <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0" />
     <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1" />
     <plugin name="cordova-plugin-media-capture" source="npm" spec="~1.2.0" />
@@ -40,15 +40,7 @@
     <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" />
     <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
-	<!--
-    <platform name="wp8">
-        
-	</platform>
-	
-    <platform name="windows">
-        
-	</platform> 
-	-->
+
     <platform name="android">
         <icon density="ldpi" src="www/img/logo.png" />
         <icon density="mdpi" src="www/img/logo.png" />
